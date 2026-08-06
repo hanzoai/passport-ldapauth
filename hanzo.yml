@@ -1,0 +1,5 @@
+# passport-ldapauth — the strategy's own mocha suite (it stands up a real
+# in-process LDAP server in test/) is the gate; lockfile is honoured.
+test:
+  - name: mocha
+    run: npm ci --no-audit --no-fund && npm test
